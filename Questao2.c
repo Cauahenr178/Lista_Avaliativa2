@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-
 #define numero_jogadores 11
 
 struct Jogador{
