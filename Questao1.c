@@ -31,7 +31,7 @@ int main(){
 
         for (int i = 0; i < tamanho_novo; i++){
             valores[i] = nova_fileira[i];
-        }
+      }
     }
     
     return 0;
