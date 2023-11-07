@@ -39,14 +39,14 @@ switch (jogador.posicao){
     return forca / 100;
 }
 
-void lerDadosTime(struct Time *time){
+void LerDadosTime(struct Time *time){
     scanf(" %30[^\n]", time->nome);
     for (int j = 0; j < numero_jogadores; j++){
         scanf(" %30[^;];%c;%d", time->jogadores[j].nome, &time->jogadores[j].posicao, &time->jogadores[j].forca);
  }
 }
 
-void exibirResultados(struct Time time1, struct Time time2){
+void ExibirResultados(struct Time time1, struct Time time2){
     float forcaTime1 = 0, forcaTime2 = 0;
 
     for (int i = 0; i < numero_jogadores; i++){
@@ -68,9 +68,9 @@ int main(){
     struct Time times[2];
 
     for (int i = 0; i < 2; i++){
-        lerDadosTime(&times[i]);
+        LerDadosTime(&times[i]);
     }
-     exibirResultados(times[0], times[1]);
+     ExibirResultados(times[0], times[1]);
 
     return 0;
 }
